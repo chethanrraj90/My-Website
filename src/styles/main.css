@@ -1,0 +1,5296 @@
+@charset "UTF-8";
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab");
+button, hr, input {
+  overflow: visible;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+progress, sub, sup {
+  vertical-align: baseline;
+}
+
+[type=checkbox], [type=radio], legend {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: ButtonText dotted 1px;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden], template {
+  display: none;
+}
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+.fa-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left {
+  margin-right: 0.3em;
+}
+
+.fa.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.fa.pull-left {
+  margin-right: 0.3em;
+}
+
+.fa.pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+:root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-flip-horizontal, :root .fa-flip-vertical {
+  filter: none;
+}
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.fa-glass:before {
+  content: "";
+}
+
+.fa-music:before {
+  content: "";
+}
+
+.fa-search:before {
+  content: "";
+}
+
+.fa-envelope-o:before {
+  content: "";
+}
+
+.fa-heart:before {
+  content: "";
+}
+
+.fa-star:before {
+  content: "";
+}
+
+.fa-star-o:before {
+  content: "";
+}
+
+.fa-user:before {
+  content: "";
+}
+
+.fa-film:before {
+  content: "";
+}
+
+.fa-th-large:before {
+  content: "";
+}
+
+.fa-th:before {
+  content: "";
+}
+
+.fa-th-list:before {
+  content: "";
+}
+
+.fa-check:before {
+  content: "";
+}
+
+.fa-remove:before, .fa-close:before, .fa-times:before {
+  content: "";
+}
+
+.fa-search-plus:before {
+  content: "";
+}
+
+.fa-search-minus:before {
+  content: "";
+}
+
+.fa-power-off:before {
+  content: "";
+}
+
+.fa-signal:before {
+  content: "";
+}
+
+.fa-gear:before, .fa-cog:before {
+  content: "";
+}
+
+.fa-trash-o:before {
+  content: "";
+}
+
+.fa-home:before {
+  content: "";
+}
+
+.fa-file-o:before {
+  content: "";
+}
+
+.fa-clock-o:before {
+  content: "";
+}
+
+.fa-road:before {
+  content: "";
+}
+
+.fa-download:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-down:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-up:before {
+  content: "";
+}
+
+.fa-inbox:before {
+  content: "";
+}
+
+.fa-play-circle-o:before {
+  content: "";
+}
+
+.fa-rotate-right:before, .fa-repeat:before {
+  content: "";
+}
+
+.fa-refresh:before {
+  content: "";
+}
+
+.fa-list-alt:before {
+  content: "";
+}
+
+.fa-lock:before {
+  content: "";
+}
+
+.fa-flag:before {
+  content: "";
+}
+
+.fa-headphones:before {
+  content: "";
+}
+
+.fa-volume-off:before {
+  content: "";
+}
+
+.fa-volume-down:before {
+  content: "";
+}
+
+.fa-volume-up:before {
+  content: "";
+}
+
+.fa-qrcode:before {
+  content: "";
+}
+
+.fa-barcode:before {
+  content: "";
+}
+
+.fa-tag:before {
+  content: "";
+}
+
+.fa-tags:before {
+  content: "";
+}
+
+.fa-book:before {
+  content: "";
+}
+
+.fa-bookmark:before {
+  content: "";
+}
+
+.fa-print:before {
+  content: "";
+}
+
+.fa-camera:before {
+  content: "";
+}
+
+.fa-font:before {
+  content: "";
+}
+
+.fa-bold:before {
+  content: "";
+}
+
+.fa-italic:before {
+  content: "";
+}
+
+.fa-text-height:before {
+  content: "";
+}
+
+.fa-text-width:before {
+  content: "";
+}
+
+.fa-align-left:before {
+  content: "";
+}
+
+.fa-align-center:before {
+  content: "";
+}
+
+.fa-align-right:before {
+  content: "";
+}
+
+.fa-align-justify:before {
+  content: "";
+}
+
+.fa-list:before {
+  content: "";
+}
+
+.fa-dedent:before, .fa-outdent:before {
+  content: "";
+}
+
+.fa-indent:before {
+  content: "";
+}
+
+.fa-video-camera:before {
+  content: "";
+}
+
+.fa-photo:before, .fa-image:before, .fa-picture-o:before {
+  content: "";
+}
+
+.fa-pencil:before {
+  content: "";
+}
+
+.fa-map-marker:before {
+  content: "";
+}
+
+.fa-adjust:before {
+  content: "";
+}
+
+.fa-tint:before {
+  content: "";
+}
+
+.fa-edit:before, .fa-pencil-square-o:before {
+  content: "";
+}
+
+.fa-share-square-o:before {
+  content: "";
+}
+
+.fa-check-square-o:before {
+  content: "";
+}
+
+.fa-arrows:before {
+  content: "";
+}
+
+.fa-step-backward:before {
+  content: "";
+}
+
+.fa-fast-backward:before {
+  content: "";
+}
+
+.fa-backward:before {
+  content: "";
+}
+
+.fa-play:before {
+  content: "";
+}
+
+.fa-pause:before {
+  content: "";
+}
+
+.fa-stop:before {
+  content: "";
+}
+
+.fa-forward:before {
+  content: "";
+}
+
+.fa-fast-forward:before {
+  content: "";
+}
+
+.fa-step-forward:before {
+  content: "";
+}
+
+.fa-eject:before {
+  content: "";
+}
+
+.fa-chevron-left:before {
+  content: "";
+}
+
+.fa-chevron-right:before {
+  content: "";
+}
+
+.fa-plus-circle:before {
+  content: "";
+}
+
+.fa-minus-circle:before {
+  content: "";
+}
+
+.fa-times-circle:before {
+  content: "";
+}
+
+.fa-check-circle:before {
+  content: "";
+}
+
+.fa-question-circle:before {
+  content: "";
+}
+
+.fa-info-circle:before {
+  content: "";
+}
+
+.fa-crosshairs:before {
+  content: "";
+}
+
+.fa-times-circle-o:before {
+  content: "";
+}
+
+.fa-check-circle-o:before {
+  content: "";
+}
+
+.fa-ban:before {
+  content: "";
+}
+
+.fa-arrow-left:before {
+  content: "";
+}
+
+.fa-arrow-right:before {
+  content: "";
+}
+
+.fa-arrow-up:before {
+  content: "";
+}
+
+.fa-arrow-down:before {
+  content: "";
+}
+
+.fa-mail-forward:before, .fa-share:before {
+  content: "";
+}
+
+.fa-expand:before {
+  content: "";
+}
+
+.fa-compress:before {
+  content: "";
+}
+
+.fa-plus:before {
+  content: "";
+}
+
+.fa-minus:before {
+  content: "";
+}
+
+.fa-asterisk:before {
+  content: "";
+}
+
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+.fa-gift:before {
+  content: "";
+}
+
+.fa-leaf:before {
+  content: "";
+}
+
+.fa-fire:before {
+  content: "";
+}
+
+.fa-eye:before {
+  content: "";
+}
+
+.fa-eye-slash:before {
+  content: "";
+}
+
+.fa-warning:before, .fa-exclamation-triangle:before {
+  content: "";
+}
+
+.fa-plane:before {
+  content: "";
+}
+
+.fa-calendar:before {
+  content: "";
+}
+
+.fa-random:before {
+  content: "";
+}
+
+.fa-comment:before {
+  content: "";
+}
+
+.fa-magnet:before {
+  content: "";
+}
+
+.fa-chevron-up:before {
+  content: "";
+}
+
+.fa-chevron-down:before {
+  content: "";
+}
+
+.fa-retweet:before {
+  content: "";
+}
+
+.fa-shopping-cart:before {
+  content: "";
+}
+
+.fa-folder:before {
+  content: "";
+}
+
+.fa-folder-open:before {
+  content: "";
+}
+
+.fa-arrows-v:before {
+  content: "";
+}
+
+.fa-arrows-h:before {
+  content: "";
+}
+
+.fa-bar-chart-o:before, .fa-bar-chart:before {
+  content: "";
+}
+
+.fa-twitter-square:before {
+  content: "";
+}
+
+.fa-facebook-square:before {
+  content: "";
+}
+
+.fa-camera-retro:before {
+  content: "";
+}
+
+.fa-key:before {
+  content: "";
+}
+
+.fa-gears:before, .fa-cogs:before {
+  content: "";
+}
+
+.fa-comments:before {
+  content: "";
+}
+
+.fa-thumbs-o-up:before {
+  content: "";
+}
+
+.fa-thumbs-o-down:before {
+  content: "";
+}
+
+.fa-star-half:before {
+  content: "";
+}
+
+.fa-heart-o:before {
+  content: "";
+}
+
+.fa-sign-out:before {
+  content: "";
+}
+
+.fa-linkedin-square:before {
+  content: "";
+}
+
+.fa-thumb-tack:before {
+  content: "";
+}
+
+.fa-external-link:before {
+  content: "";
+}
+
+.fa-sign-in:before {
+  content: "";
+}
+
+.fa-trophy:before {
+  content: "";
+}
+
+.fa-github-square:before {
+  content: "";
+}
+
+.fa-upload:before {
+  content: "";
+}
+
+.fa-lemon-o:before {
+  content: "";
+}
+
+.fa-phone:before {
+  content: "";
+}
+
+.fa-square-o:before {
+  content: "";
+}
+
+.fa-bookmark-o:before {
+  content: "";
+}
+
+.fa-phone-square:before {
+  content: "";
+}
+
+.fa-twitter:before {
+  content: "";
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "";
+}
+
+.fa-github:before {
+  content: "";
+}
+
+.fa-unlock:before {
+  content: "";
+}
+
+.fa-credit-card:before {
+  content: "";
+}
+
+.fa-feed:before, .fa-rss:before {
+  content: "";
+}
+
+.fa-hdd-o:before {
+  content: "";
+}
+
+.fa-bullhorn:before {
+  content: "";
+}
+
+.fa-bell:before {
+  content: "";
+}
+
+.fa-certificate:before {
+  content: "";
+}
+
+.fa-hand-o-right:before {
+  content: "";
+}
+
+.fa-hand-o-left:before {
+  content: "";
+}
+
+.fa-hand-o-up:before {
+  content: "";
+}
+
+.fa-hand-o-down:before {
+  content: "";
+}
+
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+.fa-globe:before {
+  content: "";
+}
+
+.fa-wrench:before {
+  content: "";
+}
+
+.fa-tasks:before {
+  content: "";
+}
+
+.fa-filter:before {
+  content: "";
+}
+
+.fa-briefcase:before {
+  content: "";
+}
+
+.fa-arrows-alt:before {
+  content: "";
+}
+
+.fa-group:before, .fa-users:before {
+  content: "";
+}
+
+.fa-chain:before, .fa-link:before {
+  content: "";
+}
+
+.fa-cloud:before {
+  content: "";
+}
+
+.fa-flask:before {
+  content: "";
+}
+
+.fa-cut:before, .fa-scissors:before {
+  content: "";
+}
+
+.fa-copy:before, .fa-files-o:before {
+  content: "";
+}
+
+.fa-paperclip:before {
+  content: "";
+}
+
+.fa-save:before, .fa-floppy-o:before {
+  content: "";
+}
+
+.fa-square:before {
+  content: "";
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  content: "";
+}
+
+.fa-list-ul:before {
+  content: "";
+}
+
+.fa-list-ol:before {
+  content: "";
+}
+
+.fa-strikethrough:before {
+  content: "";
+}
+
+.fa-underline:before {
+  content: "";
+}
+
+.fa-table:before {
+  content: "";
+}
+
+.fa-magic:before {
+  content: "";
+}
+
+.fa-truck:before {
+  content: "";
+}
+
+.fa-pinterest:before {
+  content: "";
+}
+
+.fa-pinterest-square:before {
+  content: "";
+}
+
+.fa-google-plus-square:before {
+  content: "";
+}
+
+.fa-google-plus:before {
+  content: "";
+}
+
+.fa-money:before {
+  content: "";
+}
+
+.fa-caret-down:before {
+  content: "";
+}
+
+.fa-caret-up:before {
+  content: "";
+}
+
+.fa-caret-left:before {
+  content: "";
+}
+
+.fa-caret-right:before {
+  content: "";
+}
+
+.fa-columns:before {
+  content: "";
+}
+
+.fa-unsorted:before, .fa-sort:before {
+  content: "";
+}
+
+.fa-sort-down:before, .fa-sort-desc:before {
+  content: "";
+}
+
+.fa-sort-up:before, .fa-sort-asc:before {
+  content: "";
+}
+
+.fa-envelope:before {
+  content: "";
+}
+
+.fa-linkedin:before {
+  content: "";
+}
+
+.fa-rotate-left:before, .fa-undo:before {
+  content: "";
+}
+
+.fa-legal:before, .fa-gavel:before {
+  content: "";
+}
+
+.fa-dashboard:before, .fa-tachometer:before {
+  content: "";
+}
+
+.fa-comment-o:before {
+  content: "";
+}
+
+.fa-comments-o:before {
+  content: "";
+}
+
+.fa-flash:before, .fa-bolt:before {
+  content: "";
+}
+
+.fa-sitemap:before {
+  content: "";
+}
+
+.fa-umbrella:before {
+  content: "";
+}
+
+.fa-paste:before, .fa-clipboard:before {
+  content: "";
+}
+
+.fa-lightbulb-o:before {
+  content: "";
+}
+
+.fa-exchange:before {
+  content: "";
+}
+
+.fa-cloud-download:before {
+  content: "";
+}
+
+.fa-cloud-upload:before {
+  content: "";
+}
+
+.fa-user-md:before {
+  content: "";
+}
+
+.fa-stethoscope:before {
+  content: "";
+}
+
+.fa-suitcase:before {
+  content: "";
+}
+
+.fa-bell-o:before {
+  content: "";
+}
+
+.fa-coffee:before {
+  content: "";
+}
+
+.fa-cutlery:before {
+  content: "";
+}
+
+.fa-file-text-o:before {
+  content: "";
+}
+
+.fa-building-o:before {
+  content: "";
+}
+
+.fa-hospital-o:before {
+  content: "";
+}
+
+.fa-ambulance:before {
+  content: "";
+}
+
+.fa-medkit:before {
+  content: "";
+}
+
+.fa-fighter-jet:before {
+  content: "";
+}
+
+.fa-beer:before {
+  content: "";
+}
+
+.fa-h-square:before {
+  content: "";
+}
+
+.fa-plus-square:before {
+  content: "";
+}
+
+.fa-angle-double-left:before {
+  content: "";
+}
+
+.fa-angle-double-right:before {
+  content: "";
+}
+
+.fa-angle-double-up:before {
+  content: "";
+}
+
+.fa-angle-double-down:before {
+  content: "";
+}
+
+.fa-angle-left:before {
+  content: "";
+}
+
+.fa-angle-right:before {
+  content: "";
+}
+
+.fa-angle-up:before {
+  content: "";
+}
+
+.fa-angle-down:before {
+  content: "";
+}
+
+.fa-desktop:before {
+  content: "";
+}
+
+.fa-laptop:before {
+  content: "";
+}
+
+.fa-tablet:before {
+  content: "";
+}
+
+.fa-mobile-phone:before, .fa-mobile:before {
+  content: "";
+}
+
+.fa-circle-o:before {
+  content: "";
+}
+
+.fa-quote-left:before {
+  content: "";
+}
+
+.fa-quote-right:before {
+  content: "";
+}
+
+.fa-spinner:before {
+  content: "";
+}
+
+.fa-circle:before {
+  content: "";
+}
+
+.fa-mail-reply:before, .fa-reply:before {
+  content: "";
+}
+
+.fa-github-alt:before {
+  content: "";
+}
+
+.fa-folder-o:before {
+  content: "";
+}
+
+.fa-folder-open-o:before {
+  content: "";
+}
+
+.fa-smile-o:before {
+  content: "";
+}
+
+.fa-frown-o:before {
+  content: "";
+}
+
+.fa-meh-o:before {
+  content: "";
+}
+
+.fa-gamepad:before {
+  content: "";
+}
+
+.fa-keyboard-o:before {
+  content: "";
+}
+
+.fa-flag-o:before {
+  content: "";
+}
+
+.fa-flag-checkered:before {
+  content: "";
+}
+
+.fa-terminal:before {
+  content: "";
+}
+
+.fa-code:before {
+  content: "";
+}
+
+.fa-mail-reply-all:before, .fa-reply-all:before {
+  content: "";
+}
+
+.fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before {
+  content: "";
+}
+
+.fa-location-arrow:before {
+  content: "";
+}
+
+.fa-crop:before {
+  content: "";
+}
+
+.fa-code-fork:before {
+  content: "";
+}
+
+.fa-unlink:before, .fa-chain-broken:before {
+  content: "";
+}
+
+.fa-question:before {
+  content: "";
+}
+
+.fa-info:before {
+  content: "";
+}
+
+.fa-exclamation:before {
+  content: "";
+}
+
+.fa-superscript:before {
+  content: "";
+}
+
+.fa-subscript:before {
+  content: "";
+}
+
+.fa-eraser:before {
+  content: "";
+}
+
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+.fa-microphone:before {
+  content: "";
+}
+
+.fa-microphone-slash:before {
+  content: "";
+}
+
+.fa-shield:before {
+  content: "";
+}
+
+.fa-calendar-o:before {
+  content: "";
+}
+
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+.fa-rocket:before {
+  content: "";
+}
+
+.fa-maxcdn:before {
+  content: "";
+}
+
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+.fa-html5:before {
+  content: "";
+}
+
+.fa-css3:before {
+  content: "";
+}
+
+.fa-anchor:before {
+  content: "";
+}
+
+.fa-unlock-alt:before {
+  content: "";
+}
+
+.fa-bullseye:before {
+  content: "";
+}
+
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+.fa-rss-square:before {
+  content: "";
+}
+
+.fa-play-circle:before {
+  content: "";
+}
+
+.fa-ticket:before {
+  content: "";
+}
+
+.fa-minus-square:before {
+  content: "";
+}
+
+.fa-minus-square-o:before {
+  content: "";
+}
+
+.fa-level-up:before {
+  content: "";
+}
+
+.fa-level-down:before {
+  content: "";
+}
+
+.fa-check-square:before {
+  content: "";
+}
+
+.fa-pencil-square:before {
+  content: "";
+}
+
+.fa-external-link-square:before {
+  content: "";
+}
+
+.fa-share-square:before {
+  content: "";
+}
+
+.fa-compass:before {
+  content: "";
+}
+
+.fa-toggle-down:before, .fa-caret-square-o-down:before {
+  content: "";
+}
+
+.fa-toggle-up:before, .fa-caret-square-o-up:before {
+  content: "";
+}
+
+.fa-toggle-right:before, .fa-caret-square-o-right:before {
+  content: "";
+}
+
+.fa-euro:before, .fa-eur:before {
+  content: "";
+}
+
+.fa-gbp:before {
+  content: "";
+}
+
+.fa-dollar:before, .fa-usd:before {
+  content: "";
+}
+
+.fa-rupee:before, .fa-inr:before {
+  content: "";
+}
+
+.fa-cny:before, .fa-rmb:before, .fa-yen:before, .fa-jpy:before {
+  content: "";
+}
+
+.fa-ruble:before, .fa-rouble:before, .fa-rub:before {
+  content: "";
+}
+
+.fa-won:before, .fa-krw:before {
+  content: "";
+}
+
+.fa-bitcoin:before, .fa-btc:before {
+  content: "";
+}
+
+.fa-file:before {
+  content: "";
+}
+
+.fa-file-text:before {
+  content: "";
+}
+
+.fa-sort-alpha-asc:before {
+  content: "";
+}
+
+.fa-sort-alpha-desc:before {
+  content: "";
+}
+
+.fa-sort-amount-asc:before {
+  content: "";
+}
+
+.fa-sort-amount-desc:before {
+  content: "";
+}
+
+.fa-sort-numeric-asc:before {
+  content: "";
+}
+
+.fa-sort-numeric-desc:before {
+  content: "";
+}
+
+.fa-thumbs-up:before {
+  content: "";
+}
+
+.fa-thumbs-down:before {
+  content: "";
+}
+
+.fa-youtube-square:before {
+  content: "";
+}
+
+.fa-youtube:before {
+  content: "";
+}
+
+.fa-xing:before {
+  content: "";
+}
+
+.fa-xing-square:before {
+  content: "";
+}
+
+.fa-youtube-play:before {
+  content: "";
+}
+
+.fa-dropbox:before {
+  content: "";
+}
+
+.fa-stack-overflow:before {
+  content: "";
+}
+
+.fa-instagram:before {
+  content: "";
+}
+
+.fa-flickr:before {
+  content: "";
+}
+
+.fa-adn:before {
+  content: "";
+}
+
+.fa-bitbucket:before {
+  content: "";
+}
+
+.fa-bitbucket-square:before {
+  content: "";
+}
+
+.fa-tumblr:before {
+  content: "";
+}
+
+.fa-tumblr-square:before {
+  content: "";
+}
+
+.fa-long-arrow-down:before {
+  content: "";
+}
+
+.fa-long-arrow-up:before {
+  content: "";
+}
+
+.fa-long-arrow-left:before {
+  content: "";
+}
+
+.fa-long-arrow-right:before {
+  content: "";
+}
+
+.fa-apple:before {
+  content: "";
+}
+
+.fa-windows:before {
+  content: "";
+}
+
+.fa-android:before {
+  content: "";
+}
+
+.fa-linux:before {
+  content: "";
+}
+
+.fa-dribbble:before {
+  content: "";
+}
+
+.fa-skype:before {
+  content: "";
+}
+
+.fa-foursquare:before {
+  content: "";
+}
+
+.fa-trello:before {
+  content: "";
+}
+
+.fa-female:before {
+  content: "";
+}
+
+.fa-male:before {
+  content: "";
+}
+
+.fa-gittip:before, .fa-gratipay:before {
+  content: "";
+}
+
+.fa-sun-o:before {
+  content: "";
+}
+
+.fa-moon-o:before {
+  content: "";
+}
+
+.fa-archive:before {
+  content: "";
+}
+
+.fa-bug:before {
+  content: "";
+}
+
+.fa-vk:before {
+  content: "";
+}
+
+.fa-weibo:before {
+  content: "";
+}
+
+.fa-renren:before {
+  content: "";
+}
+
+.fa-pagelines:before {
+  content: "";
+}
+
+.fa-stack-exchange:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-right:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-left:before {
+  content: "";
+}
+
+.fa-toggle-left:before, .fa-caret-square-o-left:before {
+  content: "";
+}
+
+.fa-dot-circle-o:before {
+  content: "";
+}
+
+.fa-wheelchair:before {
+  content: "";
+}
+
+.fa-vimeo-square:before {
+  content: "";
+}
+
+.fa-turkish-lira:before, .fa-try:before {
+  content: "";
+}
+
+.fa-plus-square-o:before {
+  content: "";
+}
+
+.fa-space-shuttle:before {
+  content: "";
+}
+
+.fa-slack:before {
+  content: "";
+}
+
+.fa-envelope-square:before {
+  content: "";
+}
+
+.fa-wordpress:before {
+  content: "";
+}
+
+.fa-openid:before {
+  content: "";
+}
+
+.fa-institution:before, .fa-bank:before, .fa-university:before {
+  content: "";
+}
+
+.fa-mortar-board:before, .fa-graduation-cap:before {
+  content: "";
+}
+
+.fa-yahoo:before {
+  content: "";
+}
+
+.fa-google:before {
+  content: "";
+}
+
+.fa-reddit:before {
+  content: "";
+}
+
+.fa-reddit-square:before {
+  content: "";
+}
+
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+.fa-stumbleupon:before {
+  content: "";
+}
+
+.fa-delicious:before {
+  content: "";
+}
+
+.fa-digg:before {
+  content: "";
+}
+
+.fa-pied-piper-pp:before {
+  content: "";
+}
+
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+.fa-drupal:before {
+  content: "";
+}
+
+.fa-joomla:before {
+  content: "";
+}
+
+.fa-language:before {
+  content: "";
+}
+
+.fa-fax:before {
+  content: "";
+}
+
+.fa-building:before {
+  content: "";
+}
+
+.fa-child:before {
+  content: "";
+}
+
+.fa-paw:before {
+  content: "";
+}
+
+.fa-spoon:before {
+  content: "";
+}
+
+.fa-cube:before {
+  content: "";
+}
+
+.fa-cubes:before {
+  content: "";
+}
+
+.fa-behance:before {
+  content: "";
+}
+
+.fa-behance-square:before {
+  content: "";
+}
+
+.fa-steam:before {
+  content: "";
+}
+
+.fa-steam-square:before {
+  content: "";
+}
+
+.fa-recycle:before {
+  content: "";
+}
+
+.fa-automobile:before, .fa-car:before {
+  content: "";
+}
+
+.fa-cab:before, .fa-taxi:before {
+  content: "";
+}
+
+.fa-tree:before {
+  content: "";
+}
+
+.fa-spotify:before {
+  content: "";
+}
+
+.fa-deviantart:before {
+  content: "";
+}
+
+.fa-soundcloud:before {
+  content: "";
+}
+
+.fa-database:before {
+  content: "";
+}
+
+.fa-file-pdf-o:before {
+  content: "";
+}
+
+.fa-file-word-o:before {
+  content: "";
+}
+
+.fa-file-excel-o:before {
+  content: "";
+}
+
+.fa-file-powerpoint-o:before {
+  content: "";
+}
+
+.fa-file-photo-o:before, .fa-file-picture-o:before, .fa-file-image-o:before {
+  content: "";
+}
+
+.fa-file-zip-o:before, .fa-file-archive-o:before {
+  content: "";
+}
+
+.fa-file-sound-o:before, .fa-file-audio-o:before {
+  content: "";
+}
+
+.fa-file-movie-o:before, .fa-file-video-o:before {
+  content: "";
+}
+
+.fa-file-code-o:before {
+  content: "";
+}
+
+.fa-vine:before {
+  content: "";
+}
+
+.fa-codepen:before {
+  content: "";
+}
+
+.fa-jsfiddle:before {
+  content: "";
+}
+
+.fa-life-bouy:before, .fa-life-buoy:before, .fa-life-saver:before, .fa-support:before, .fa-life-ring:before {
+  content: "";
+}
+
+.fa-circle-o-notch:before {
+  content: "";
+}
+
+.fa-ra:before, .fa-resistance:before, .fa-rebel:before {
+  content: "";
+}
+
+.fa-ge:before, .fa-empire:before {
+  content: "";
+}
+
+.fa-git-square:before {
+  content: "";
+}
+
+.fa-git:before {
+  content: "";
+}
+
+.fa-y-combinator-square:before, .fa-yc-square:before, .fa-hacker-news:before {
+  content: "";
+}
+
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+.fa-qq:before {
+  content: "";
+}
+
+.fa-wechat:before, .fa-weixin:before {
+  content: "";
+}
+
+.fa-send:before, .fa-paper-plane:before {
+  content: "";
+}
+
+.fa-send-o:before, .fa-paper-plane-o:before {
+  content: "";
+}
+
+.fa-history:before {
+  content: "";
+}
+
+.fa-circle-thin:before {
+  content: "";
+}
+
+.fa-header:before {
+  content: "";
+}
+
+.fa-paragraph:before {
+  content: "";
+}
+
+.fa-sliders:before {
+  content: "";
+}
+
+.fa-share-alt:before {
+  content: "";
+}
+
+.fa-share-alt-square:before {
+  content: "";
+}
+
+.fa-bomb:before {
+  content: "";
+}
+
+.fa-soccer-ball-o:before, .fa-futbol-o:before {
+  content: "";
+}
+
+.fa-tty:before {
+  content: "";
+}
+
+.fa-binoculars:before {
+  content: "";
+}
+
+.fa-plug:before {
+  content: "";
+}
+
+.fa-slideshare:before {
+  content: "";
+}
+
+.fa-twitch:before {
+  content: "";
+}
+
+.fa-yelp:before {
+  content: "";
+}
+
+.fa-newspaper-o:before {
+  content: "";
+}
+
+.fa-wifi:before {
+  content: "";
+}
+
+.fa-calculator:before {
+  content: "";
+}
+
+.fa-paypal:before {
+  content: "";
+}
+
+.fa-google-wallet:before {
+  content: "";
+}
+
+.fa-cc-visa:before {
+  content: "";
+}
+
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+.fa-cc-discover:before {
+  content: "";
+}
+
+.fa-cc-amex:before {
+  content: "";
+}
+
+.fa-cc-paypal:before {
+  content: "";
+}
+
+.fa-cc-stripe:before {
+  content: "";
+}
+
+.fa-bell-slash:before {
+  content: "";
+}
+
+.fa-bell-slash-o:before {
+  content: "";
+}
+
+.fa-trash:before {
+  content: "";
+}
+
+.fa-copyright:before {
+  content: "";
+}
+
+.fa-at:before {
+  content: "";
+}
+
+.fa-eyedropper:before {
+  content: "";
+}
+
+.fa-paint-brush:before {
+  content: "";
+}
+
+.fa-birthday-cake:before {
+  content: "";
+}
+
+.fa-area-chart:before {
+  content: "";
+}
+
+.fa-pie-chart:before {
+  content: "";
+}
+
+.fa-line-chart:before {
+  content: "";
+}
+
+.fa-lastfm:before {
+  content: "";
+}
+
+.fa-lastfm-square:before {
+  content: "";
+}
+
+.fa-toggle-off:before {
+  content: "";
+}
+
+.fa-toggle-on:before {
+  content: "";
+}
+
+.fa-bicycle:before {
+  content: "";
+}
+
+.fa-bus:before {
+  content: "";
+}
+
+.fa-ioxhost:before {
+  content: "";
+}
+
+.fa-angellist:before {
+  content: "";
+}
+
+.fa-cc:before {
+  content: "";
+}
+
+.fa-shekel:before, .fa-sheqel:before, .fa-ils:before {
+  content: "";
+}
+
+.fa-meanpath:before {
+  content: "";
+}
+
+.fa-buysellads:before {
+  content: "";
+}
+
+.fa-connectdevelop:before {
+  content: "";
+}
+
+.fa-dashcube:before {
+  content: "";
+}
+
+.fa-forumbee:before {
+  content: "";
+}
+
+.fa-leanpub:before {
+  content: "";
+}
+
+.fa-sellsy:before {
+  content: "";
+}
+
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+.fa-simplybuilt:before {
+  content: "";
+}
+
+.fa-skyatlas:before {
+  content: "";
+}
+
+.fa-cart-plus:before {
+  content: "";
+}
+
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+.fa-diamond:before {
+  content: "";
+}
+
+.fa-ship:before {
+  content: "";
+}
+
+.fa-user-secret:before {
+  content: "";
+}
+
+.fa-motorcycle:before {
+  content: "";
+}
+
+.fa-street-view:before {
+  content: "";
+}
+
+.fa-heartbeat:before {
+  content: "";
+}
+
+.fa-venus:before {
+  content: "";
+}
+
+.fa-mars:before {
+  content: "";
+}
+
+.fa-mercury:before {
+  content: "";
+}
+
+.fa-intersex:before, .fa-transgender:before {
+  content: "";
+}
+
+.fa-transgender-alt:before {
+  content: "";
+}
+
+.fa-venus-double:before {
+  content: "";
+}
+
+.fa-mars-double:before {
+  content: "";
+}
+
+.fa-venus-mars:before {
+  content: "";
+}
+
+.fa-mars-stroke:before {
+  content: "";
+}
+
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+.fa-neuter:before {
+  content: "";
+}
+
+.fa-genderless:before {
+  content: "";
+}
+
+.fa-facebook-official:before {
+  content: "";
+}
+
+.fa-pinterest-p:before {
+  content: "";
+}
+
+.fa-whatsapp:before {
+  content: "";
+}
+
+.fa-server:before {
+  content: "";
+}
+
+.fa-user-plus:before {
+  content: "";
+}
+
+.fa-user-times:before {
+  content: "";
+}
+
+.fa-hotel:before, .fa-bed:before {
+  content: "";
+}
+
+.fa-viacoin:before {
+  content: "";
+}
+
+.fa-train:before {
+  content: "";
+}
+
+.fa-subway:before {
+  content: "";
+}
+
+.fa-medium:before {
+  content: "";
+}
+
+.fa-yc:before, .fa-y-combinator:before {
+  content: "";
+}
+
+.fa-optin-monster:before {
+  content: "";
+}
+
+.fa-opencart:before {
+  content: "";
+}
+
+.fa-expeditedssl:before {
+  content: "";
+}
+
+.fa-battery-4:before, .fa-battery:before, .fa-battery-full:before {
+  content: "";
+}
+
+.fa-battery-3:before, .fa-battery-three-quarters:before {
+  content: "";
+}
+
+.fa-battery-2:before, .fa-battery-half:before {
+  content: "";
+}
+
+.fa-battery-1:before, .fa-battery-quarter:before {
+  content: "";
+}
+
+.fa-battery-0:before, .fa-battery-empty:before {
+  content: "";
+}
+
+.fa-mouse-pointer:before {
+  content: "";
+}
+
+.fa-i-cursor:before {
+  content: "";
+}
+
+.fa-object-group:before {
+  content: "";
+}
+
+.fa-object-ungroup:before {
+  content: "";
+}
+
+.fa-sticky-note:before {
+  content: "";
+}
+
+.fa-sticky-note-o:before {
+  content: "";
+}
+
+.fa-cc-jcb:before {
+  content: "";
+}
+
+.fa-cc-diners-club:before {
+  content: "";
+}
+
+.fa-clone:before {
+  content: "";
+}
+
+.fa-balance-scale:before {
+  content: "";
+}
+
+.fa-hourglass-o:before {
+  content: "";
+}
+
+.fa-hourglass-1:before, .fa-hourglass-start:before {
+  content: "";
+}
+
+.fa-hourglass-2:before, .fa-hourglass-half:before {
+  content: "";
+}
+
+.fa-hourglass-3:before, .fa-hourglass-end:before {
+  content: "";
+}
+
+.fa-hourglass:before {
+  content: "";
+}
+
+.fa-hand-grab-o:before, .fa-hand-rock-o:before {
+  content: "";
+}
+
+.fa-hand-stop-o:before, .fa-hand-paper-o:before {
+  content: "";
+}
+
+.fa-hand-scissors-o:before {
+  content: "";
+}
+
+.fa-hand-lizard-o:before {
+  content: "";
+}
+
+.fa-hand-spock-o:before {
+  content: "";
+}
+
+.fa-hand-pointer-o:before {
+  content: "";
+}
+
+.fa-hand-peace-o:before {
+  content: "";
+}
+
+.fa-trademark:before {
+  content: "";
+}
+
+.fa-registered:before {
+  content: "";
+}
+
+.fa-creative-commons:before {
+  content: "";
+}
+
+.fa-gg:before {
+  content: "";
+}
+
+.fa-gg-circle:before {
+  content: "";
+}
+
+.fa-tripadvisor:before {
+  content: "";
+}
+
+.fa-odnoklassniki:before {
+  content: "";
+}
+
+.fa-odnoklassniki-square:before {
+  content: "";
+}
+
+.fa-get-pocket:before {
+  content: "";
+}
+
+.fa-wikipedia-w:before {
+  content: "";
+}
+
+.fa-safari:before {
+  content: "";
+}
+
+.fa-chrome:before {
+  content: "";
+}
+
+.fa-firefox:before {
+  content: "";
+}
+
+.fa-opera:before {
+  content: "";
+}
+
+.fa-internet-explorer:before {
+  content: "";
+}
+
+.fa-tv:before, .fa-television:before {
+  content: "";
+}
+
+.fa-contao:before {
+  content: "";
+}
+
+.fa-500px:before {
+  content: "";
+}
+
+.fa-amazon:before {
+  content: "";
+}
+
+.fa-calendar-plus-o:before {
+  content: "";
+}
+
+.fa-calendar-minus-o:before {
+  content: "";
+}
+
+.fa-calendar-times-o:before {
+  content: "";
+}
+
+.fa-calendar-check-o:before {
+  content: "";
+}
+
+.fa-industry:before {
+  content: "";
+}
+
+.fa-map-pin:before {
+  content: "";
+}
+
+.fa-map-signs:before {
+  content: "";
+}
+
+.fa-map-o:before {
+  content: "";
+}
+
+.fa-map:before {
+  content: "";
+}
+
+.fa-commenting:before {
+  content: "";
+}
+
+.fa-commenting-o:before {
+  content: "";
+}
+
+.fa-houzz:before {
+  content: "";
+}
+
+.fa-vimeo:before {
+  content: "";
+}
+
+.fa-black-tie:before {
+  content: "";
+}
+
+.fa-fonticons:before {
+  content: "";
+}
+
+.fa-reddit-alien:before {
+  content: "";
+}
+
+.fa-edge:before {
+  content: "";
+}
+
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+.fa-codiepie:before {
+  content: "";
+}
+
+.fa-modx:before {
+  content: "";
+}
+
+.fa-fort-awesome:before {
+  content: "";
+}
+
+.fa-usb:before {
+  content: "";
+}
+
+.fa-product-hunt:before {
+  content: "";
+}
+
+.fa-mixcloud:before {
+  content: "";
+}
+
+.fa-scribd:before {
+  content: "";
+}
+
+.fa-pause-circle:before {
+  content: "";
+}
+
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+.fa-stop-circle:before {
+  content: "";
+}
+
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+.fa-shopping-bag:before {
+  content: "";
+}
+
+.fa-shopping-basket:before {
+  content: "";
+}
+
+.fa-hashtag:before {
+  content: "";
+}
+
+.fa-bluetooth:before {
+  content: "";
+}
+
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+.fa-percent:before {
+  content: "";
+}
+
+.fa-gitlab:before {
+  content: "";
+}
+
+.fa-wpbeginner:before {
+  content: "";
+}
+
+.fa-wpforms:before {
+  content: "";
+}
+
+.fa-envira:before {
+  content: "";
+}
+
+.fa-universal-access:before {
+  content: "";
+}
+
+.fa-wheelchair-alt:before {
+  content: "";
+}
+
+.fa-question-circle-o:before {
+  content: "";
+}
+
+.fa-blind:before {
+  content: "";
+}
+
+.fa-audio-description:before {
+  content: "";
+}
+
+.fa-volume-control-phone:before {
+  content: "";
+}
+
+.fa-braille:before {
+  content: "";
+}
+
+.fa-assistive-listening-systems:before {
+  content: "";
+}
+
+.fa-asl-interpreting:before, .fa-american-sign-language-interpreting:before {
+  content: "";
+}
+
+.fa-deafness:before, .fa-hard-of-hearing:before, .fa-deaf:before {
+  content: "";
+}
+
+.fa-glide:before {
+  content: "";
+}
+
+.fa-glide-g:before {
+  content: "";
+}
+
+.fa-signing:before, .fa-sign-language:before {
+  content: "";
+}
+
+.fa-low-vision:before {
+  content: "";
+}
+
+.fa-viadeo:before {
+  content: "";
+}
+
+.fa-viadeo-square:before {
+  content: "";
+}
+
+.fa-snapchat:before {
+  content: "";
+}
+
+.fa-snapchat-ghost:before {
+  content: "";
+}
+
+.fa-snapchat-square:before {
+  content: "";
+}
+
+.fa-pied-piper:before {
+  content: "";
+}
+
+.fa-first-order:before {
+  content: "";
+}
+
+.fa-yoast:before {
+  content: "";
+}
+
+.fa-themeisle:before {
+  content: "";
+}
+
+.fa-google-plus-circle:before, .fa-google-plus-official:before {
+  content: "";
+}
+
+.fa-fa:before, .fa-font-awesome:before {
+  content: "";
+}
+
+.fa-handshake-o:before {
+  content: "";
+}
+
+.fa-envelope-open:before {
+  content: "";
+}
+
+.fa-envelope-open-o:before {
+  content: "";
+}
+
+.fa-linode:before {
+  content: "";
+}
+
+.fa-address-book:before {
+  content: "";
+}
+
+.fa-address-book-o:before {
+  content: "";
+}
+
+.fa-vcard:before, .fa-address-card:before {
+  content: "";
+}
+
+.fa-vcard-o:before, .fa-address-card-o:before {
+  content: "";
+}
+
+.fa-user-circle:before {
+  content: "";
+}
+
+.fa-user-circle-o:before {
+  content: "";
+}
+
+.fa-user-o:before {
+  content: "";
+}
+
+.fa-id-badge:before {
+  content: "";
+}
+
+.fa-drivers-license:before, .fa-id-card:before {
+  content: "";
+}
+
+.fa-drivers-license-o:before, .fa-id-card-o:before {
+  content: "";
+}
+
+.fa-quora:before {
+  content: "";
+}
+
+.fa-free-code-camp:before {
+  content: "";
+}
+
+.fa-telegram:before {
+  content: "";
+}
+
+.fa-thermometer-4:before, .fa-thermometer:before, .fa-thermometer-full:before {
+  content: "";
+}
+
+.fa-thermometer-3:before, .fa-thermometer-three-quarters:before {
+  content: "";
+}
+
+.fa-thermometer-2:before, .fa-thermometer-half:before {
+  content: "";
+}
+
+.fa-thermometer-1:before, .fa-thermometer-quarter:before {
+  content: "";
+}
+
+.fa-thermometer-0:before, .fa-thermometer-empty:before {
+  content: "";
+}
+
+.fa-shower:before {
+  content: "";
+}
+
+.fa-bathtub:before, .fa-s15:before, .fa-bath:before {
+  content: "";
+}
+
+.fa-podcast:before {
+  content: "";
+}
+
+.fa-window-maximize:before {
+  content: "";
+}
+
+.fa-window-minimize:before {
+  content: "";
+}
+
+.fa-window-restore:before {
+  content: "";
+}
+
+.fa-times-rectangle:before, .fa-window-close:before {
+  content: "";
+}
+
+.fa-times-rectangle-o:before, .fa-window-close-o:before {
+  content: "";
+}
+
+.fa-bandcamp:before {
+  content: "";
+}
+
+.fa-grav:before {
+  content: "";
+}
+
+.fa-etsy:before {
+  content: "";
+}
+
+.fa-imdb:before {
+  content: "";
+}
+
+.fa-ravelry:before {
+  content: "";
+}
+
+.fa-eercast:before {
+  content: "";
+}
+
+.fa-microchip:before {
+  content: "";
+}
+
+.fa-snowflake-o:before {
+  content: "";
+}
+
+.fa-superpowers:before {
+  content: "";
+}
+
+.fa-wpexplorer:before {
+  content: "";
+}
+
+.fa-meetup:before {
+  content: "";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+@font-face {
+  font-family: devicon;
+  src: url(../fonts/devicon.eot?-hdf3wh);
+  src: url(../fonts/devicon.eot?#iefix-hdf3wh) format("embedded-opentype"), url(../fonts/devicon.woff?-hdf3wh) format("woff"), url(../fonts/devicon.ttf?-hdf3wh) format("truetype"), url(../fonts/devicon.svg?-hdf3wh#devicon) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+[class*=" devicon-"], [class^=devicon-] {
+  font-family: devicon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.devicon-express-original-wordmark:before {
+  content: "";
+}
+
+.devicon-express-original:before {
+  content: "";
+}
+
+.devicon-devicon-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-devicon-plain:before {
+  content: "";
+}
+
+.devicon-intellij-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-intellij-plain:before {
+  content: "";
+}
+
+.devicon-pycharm-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-pycharm-plain:before {
+  content: "";
+}
+
+.devicon-rubymine-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-rubymine-plain:before {
+  content: "";
+}
+
+.devicon-webstorm-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-webstorm-plain:before {
+  content: "";
+}
+
+.devicon-tomcat-line-wordmark:before {
+  content: "";
+}
+
+.devicon-tomcat-line:before {
+  content: "";
+}
+
+.devicon-vuejs-line-wordmark:before {
+  content: "";
+}
+
+.devicon-vuejs-line:before {
+  content: "";
+}
+
+.devicon-vuejs-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-vuejs-plain:before {
+  content: "";
+}
+
+.devicon-swift-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-swift-plain:before {
+  content: "";
+}
+
+.devicon-webpack-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-webpack-plain:before {
+  content: "";
+}
+
+.devicon-visualstudio-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-visualstudio-plain:before {
+  content: "";
+}
+
+.devicon-slack-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-slack-plain:before {
+  content: "";
+}
+
+.devicon-facebook-original:before, .devicon-facebook-plain:before {
+  content: "";
+}
+
+.devicon-typescript-original:before, .devicon-typescript-plain:before {
+  content: "";
+}
+
+.devicon-babel-original:before, .devicon-babel-plain:before {
+  content: "";
+}
+
+.devicon-mocha-plain:before {
+  content: "";
+}
+
+.devicon-jasmine-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-jasmine-plain:before {
+  content: "";
+}
+
+.devicon-gatling-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-gatling-plain:before {
+  content: "";
+}
+
+.devicon-ssh-original-wordmark:before, .devicon-ssh-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-ssh-original:before, .devicon-ssh-plain:before {
+  content: "";
+}
+
+.devicon-sourcetree-original-wordmark:before, .devicon-sourcetree-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-sourcetree-original:before, .devicon-sourcetree-plain:before {
+  content: "";
+}
+
+.devicon-phpstorm-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-phpstorm-plain:before {
+  content: "";
+}
+
+.devicon-protractor-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-protractor-plain:before {
+  content: "";
+}
+
+.devicon-gradle-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-gradle-plain:before {
+  content: "";
+}
+
+.devicon-cucumber-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-cucumber-plain:before {
+  content: "";
+}
+
+.devicon-jeet-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-jeet-plain:before {
+  content: "";
+}
+
+.devicon-gitlab-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-gitlab-plain:before {
+  content: "";
+}
+
+.devicon-github-original-wordmark:before, .devicon-github-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-github-original:before, .devicon-github-plain:before {
+  content: "";
+}
+
+.devicon-d3js-plain:before {
+  content: "";
+}
+
+.devicon-confluence-original-wordmark:before, .devicon-confluence-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-confluence-original:before, .devicon-confluence-plain:before {
+  content: "";
+}
+
+.devicon-bitbucket-original-wordmark:before, .devicon-bitbucket-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-bitbucket-original:before, .devicon-bitbucket-plain:before {
+  content: "";
+}
+
+.devicon-safari-line-wordmark:before {
+  content: "";
+}
+
+.devicon-safari-line:before {
+  content: "";
+}
+
+.devicon-safari-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-safari-plain:before {
+  content: "";
+}
+
+.devicon-jetbrains-line-wordmark:before, .devicon-jetbrains-line:before, .devicon-jetbrains-plain-wordmark:before, .devicon-jetbrains-plain:before {
+  content: "";
+}
+
+.devicon-django-line-wordmark:before, .devicon-django-line:before {
+  content: "";
+}
+
+.devicon-django-plain-wordmark:before, .devicon-django-plain:before {
+  content: "";
+}
+
+.devicon-gimp-plain:before {
+  content: "";
+}
+
+.devicon-redhat-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-redhat-plain:before {
+  content: "";
+}
+
+.devicon-cplusplus-line-wordmark:before, .devicon-cplusplus-line:before {
+  content: "";
+}
+
+.devicon-cplusplus-plain-wordmark:before, .devicon-cplusplus-plain:before {
+  content: "";
+}
+
+.devicon-csharp-line-wordmark:before, .devicon-csharp-line:before {
+  content: "";
+}
+
+.devicon-csharp-plain-wordmark:before, .devicon-csharp-plain:before {
+  content: "";
+}
+
+.devicon-c-line-wordmark:before, .devicon-c-line:before {
+  content: "";
+}
+
+.devicon-c-plain-wordmark:before, .devicon-c-plain:before {
+  content: "";
+}
+
+.devicon-nodewebkit-line-wordmark:before {
+  content: "";
+}
+
+.devicon-nodewebkit-line:before {
+  content: "";
+}
+
+.devicon-nodewebkit-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-nodewebkit-plain:before {
+  content: "";
+}
+
+.devicon-nginx-original-wordmark:before, .devicon-nginx-original:before, .devicon-nginx-plain-wordmark:before, .devicon-nginx-plain:before {
+  content: "";
+}
+
+.devicon-erlang-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-erlang-plain:before {
+  content: "";
+}
+
+.devicon-doctrine-line-wordmark:before {
+  content: "";
+}
+
+.devicon-doctrine-line:before {
+  content: "";
+}
+
+.devicon-doctrine-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-doctrine-plain:before {
+  content: "";
+}
+
+.devicon-apache-line-wordmark:before {
+  content: "";
+}
+
+.devicon-apache-line:before {
+  content: "";
+}
+
+.devicon-apache-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-apache-plain:before {
+  content: "";
+}
+
+.devicon-go-line:before {
+  content: "";
+}
+
+.devicon-redis-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-redis-plain:before {
+  content: "";
+}
+
+.devicon-meteor-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-meteor-plain:before {
+  content: "";
+}
+
+.devicon-heroku-line-wordmark:before, .devicon-heroku-original-wordmark:before {
+  content: "";
+}
+
+.devicon-heroku-line:before, .devicon-heroku-original:before {
+  content: "";
+}
+
+.devicon-heroku-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-heroku-plain:before {
+  content: "";
+}
+
+.devicon-go-plain:before {
+  content: "";
+}
+
+.devicon-docker-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-docker-plain:before {
+  content: "";
+}
+
+.devicon-amazonwebservices-original:before, .devicon-amazonwebservices-plain:before {
+  content: "";
+}
+
+.devicon-amazonwebservices-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-android-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-android-plain:before {
+  content: "";
+}
+
+.devicon-angularjs-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-angularjs-plain:before {
+  content: "";
+}
+
+.devicon-appcelerator-original:before, .devicon-appcelerator-plain:before {
+  content: "";
+}
+
+.devicon-appcelerator-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-apple-original:before, .devicon-apple-plain:before {
+  content: "";
+}
+
+.devicon-atom-original-wordmark:before, .devicon-atom-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-atom-original:before, .devicon-atom-plain:before {
+  content: "";
+}
+
+.devicon-backbonejs-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-backbonejs-plain:before {
+  content: "";
+}
+
+.devicon-bootstrap-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-bootstrap-plain:before {
+  content: "";
+}
+
+.devicon-bower-line-wordmark:before {
+  content: "";
+}
+
+.devicon-bower-line:before {
+  content: "";
+}
+
+.devicon-bower-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-bower-plain:before {
+  content: "";
+}
+
+.devicon-chrome-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-chrome-plain:before {
+  content: "";
+}
+
+.devicon-codeigniter-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-codeigniter-plain:before {
+  content: "";
+}
+
+.devicon-coffeescript-original-wordmark:before, .devicon-coffeescript-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-coffeescript-original:before, .devicon-coffeescript-plain:before {
+  content: "";
+}
+
+.devicon-css3-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-css3-plain:before {
+  content: "";
+}
+
+.devicon-debian-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-debian-plain:before {
+  content: "";
+}
+
+.devicon-dot-net-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-dot-net-plain:before {
+  content: "";
+}
+
+.devicon-drupal-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-drupal-plain:before {
+  content: "";
+}
+
+.devicon-firefox-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-firefox-plain:before {
+  content: "";
+}
+
+.devicon-foundation-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-foundation-plain:before {
+  content: "";
+}
+
+.devicon-git-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-git-plain:before {
+  content: "";
+}
+
+.devicon-google-original-wordmark:before, .devicon-google-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-google-original:before, .devicon-google-plain:before {
+  content: "";
+}
+
+.devicon-grunt-line-wordmark:before {
+  content: "";
+}
+
+.devicon-grunt-line:before {
+  content: "";
+}
+
+.devicon-grunt-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-grunt-plain:before {
+  content: "";
+}
+
+.devicon-gulp-plain:before {
+  content: "";
+}
+
+.devicon-html5-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-html5-plain:before {
+  content: "";
+}
+
+.devicon-ie10-original:before, .devicon-ie10-plain:before {
+  content: "";
+}
+
+.devicon-illustrator-line:before {
+  content: "";
+}
+
+.devicon-illustrator-plain:before {
+  content: "";
+}
+
+.devicon-inkscape-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-inkscape-plain:before {
+  content: "";
+}
+
+.devicon-java-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-java-plain:before {
+  content: "";
+}
+
+.devicon-javascript-plain:before {
+  content: "";
+}
+
+.devicon-jquery-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-jquery-plain:before {
+  content: "";
+}
+
+.devicon-krakenjs-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-krakenjs-plain:before {
+  content: "";
+}
+
+.devicon-laravel-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-laravel-plain:before {
+  content: "";
+}
+
+.devicon-less-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-linux-plain:before {
+  content: "";
+}
+
+.devicon-mongodb-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-mongodb-plain:before {
+  content: "";
+}
+
+.devicon-moodle-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-moodle-plain:before {
+  content: "";
+}
+
+.devicon-mysql-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-mysql-plain:before {
+  content: "";
+}
+
+.devicon-nodejs-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-nodejs-plain:before {
+  content: "";
+}
+
+.devicon-oracle-original:before, .devicon-oracle-plain:before {
+  content: "";
+}
+
+.devicon-photoshop-line:before {
+  content: "";
+}
+
+.devicon-photoshop-plain:before {
+  content: "";
+}
+
+.devicon-php-plain:before {
+  content: "";
+}
+
+.devicon-postgresql-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-postgresql-plain:before {
+  content: "";
+}
+
+.devicon-python-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-python-plain:before {
+  content: "";
+}
+
+.devicon-rails-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-rails-plain:before {
+  content: "";
+}
+
+.devicon-react-original-wordmark:before, .devicon-react-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-react-original:before, .devicon-react-plain:before {
+  content: "";
+}
+
+.devicon-ruby-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-ruby-plain:before {
+  content: "";
+}
+
+.devicon-sass-original:before, .devicon-sass-plain:before {
+  content: "";
+}
+
+.devicon-sequelize-original-wordmark:before, .devicon-sequelize-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-sequelize-original:before, .devicon-sequelize-plain:before {
+  content: "";
+}
+
+.devicon-symfony-original-wordmark:before, .devicon-symfony-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-symfony-original:before, .devicon-symfony-plain:before {
+  content: "";
+}
+
+.devicon-travis-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-travis-plain:before {
+  content: "";
+}
+
+.devicon-trello-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-trello-plain:before {
+  content: "";
+}
+
+.devicon-twitter-original:before, .devicon-twitter-plain:before {
+  content: "";
+}
+
+.devicon-ubuntu-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-ubuntu-plain:before {
+  content: "";
+}
+
+.devicon-vim-plain:before {
+  content: "";
+}
+
+.devicon-windows8-original-wordmark:before, .devicon-windows8-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-windows8-original:before, .devicon-windows8-plain:before {
+  content: "";
+}
+
+.devicon-wordpress-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-wordpress-plain:before {
+  content: "";
+}
+
+.devicon-yii-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-yii-plain:before {
+  content: "";
+}
+
+.devicon-zend-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-zend-plain:before {
+  content: "";
+}
+
+.devicon-express-original-wordmark.colored, .devicon-express-original.colored {
+  color: #444;
+}
+
+.devicon-devicon-plain-wordmark.colored, .devicon-devicon-plain.colored {
+  color: #60BE86;
+}
+
+.devicon-intellij-plain-wordmark.colored, .devicon-intellij-plain.colored {
+  color: #136BA2;
+}
+
+.devicon-pycharm-plain-wordmark.colored, .devicon-pycharm-plain.colored {
+  color: #4D8548;
+}
+
+.devicon-rubymine-plain-wordmark.colored, .devicon-rubymine-plain.colored {
+  color: #C12C4C;
+}
+
+.devicon-webstorm-plain-wordmark.colored, .devicon-webstorm-plain.colored {
+  color: #2788B5;
+}
+
+.devicon-tomcat-line-wordmark.colored, .devicon-tomcat-line.colored {
+  color: #D1A41A;
+}
+
+.devicon-vuejs-line-wordmark.colored, .devicon-vuejs-line.colored, .devicon-vuejs-plain-wordmark.colored, .devicon-vuejs-plain.colored {
+  color: #41B883;
+}
+
+.devicon-swift-plain-wordmark.colored, .devicon-swift-plain.colored {
+  color: #F05138;
+}
+
+.devicon-webpack-plain-wordmark.colored, .devicon-webpack-plain.colored {
+  color: #1C78C0;
+}
+
+.devicon-visualstudio-plain-wordmark.colored, .devicon-visualstudio-plain.colored {
+  color: #68217A;
+}
+
+.devicon-slack-plain-wordmark.colored, .devicon-slack-plain.colored {
+  color: #2D333A;
+}
+
+.devicon-gatling-plain-wordmark.colored, .devicon-gatling-plain.colored {
+  color: #E77500;
+}
+
+.devicon-ssh-original-wordmark.colored, .devicon-ssh-original.colored, .devicon-ssh-plain-wordmark.colored, .devicon-ssh-plain.colored {
+  color: #231F20;
+}
+
+.devicon-sourcetree-original-wordmark.colored, .devicon-sourcetree-original.colored, .devicon-sourcetree-plain-wordmark.colored, .devicon-sourcetree-plain.colored {
+  color: #205081;
+}
+
+.devicon-phpstorm-plain-wordmark.colored, .devicon-phpstorm-plain.colored {
+  color: #5058A6;
+}
+
+.devicon-protractor-plain-wordmark.colored, .devicon-protractor-plain.colored {
+  color: #b7111d;
+}
+
+.devicon-cucumber-plain-wordmark.colored, .devicon-cucumber-plain.colored {
+  color: #00a818;
+}
+
+.devicon-gradle-plain-wordmark.colored, .devicon-gradle-plain.colored {
+  color: #02303a;
+}
+
+.devicon-jeet-plain-wordmark.colored, .devicon-jeet-plain.colored {
+  color: #FF664A;
+}
+
+.devicon-gitlab-plain-wordmark.colored, .devicon-gitlab-plain.colored {
+  color: #E24329;
+}
+
+.devicon-github-original-wordmark.colored, .devicon-github-original.colored, .devicon-github-plain-wordmark.colored, .devicon-github-plain.colored {
+  color: #181616;
+}
+
+.devicon-d3js-plain.colored {
+  color: #f7974e;
+}
+
+.devicon-bitbucket-original-wordmark.colored, .devicon-bitbucket-original.colored, .devicon-bitbucket-plain-wordmark.colored, .devicon-bitbucket-plain.colored, .devicon-confluence-original-wordmark.colored, .devicon-confluence-original.colored, .devicon-confluence-plain-wordmark.colored, .devicon-confluence-plain.colored {
+  color: #205081;
+}
+
+.devicon-amazonwebservices-original.colored, .devicon-amazonwebservices-plain-wordmark.colored, .devicon-amazonwebservices-plain.colored {
+  color: #F7A80D;
+}
+
+.devicon-android-plain-wordmark.colored, .devicon-android-plain.colored {
+  color: #A4C439;
+}
+
+.devicon-angularjs-plain-wordmark.colored, .devicon-angularjs-plain.colored {
+  color: #c4473a;
+}
+
+.devicon-apache-line-wordmark.colored, .devicon-apache-line.colored, .devicon-apache-plain-wordmark.colored, .devicon-apache-plain.colored {
+  color: #303284;
+}
+
+.devicon-appcelerator-original.colored, .devicon-appcelerator-plain-wordmark.colored, .devicon-appcelerator-plain.colored {
+  color: #ac162c;
+}
+
+.devicon-apple-original.colored, .devicon-apple-plain.colored {
+  color: #000;
+}
+
+.devicon-atom-original-wordmark.colored, .devicon-atom-original.colored, .devicon-atom-plain-wordmark.colored, .devicon-atom-plain.colored {
+  color: #67595D;
+}
+
+.devicon-babel-original.colored, .devicon-babel-plain.colored {
+  color: #f9dc3e;
+}
+
+.devicon-backbonejs-plain-wordmark.colored, .devicon-backbonejs-plain.colored {
+  color: #002A41;
+}
+
+.devicon-bootstrap-plain-wordmark.colored, .devicon-bootstrap-plain.colored {
+  color: #59407f;
+}
+
+.devicon-bower-line-wordmark.colored, .devicon-bower-line.colored, .devicon-bower-plain-wordmark.colored, .devicon-bower-plain.colored {
+  color: #ef5734;
+}
+
+.devicon-c-line-wordmark.colored, .devicon-c-line.colored, .devicon-c-plain-wordmark.colored, .devicon-c-plain.colored {
+  color: #03599c;
+}
+
+.devicon-chrome-plain-wordmark.colored, .devicon-chrome-plain.colored {
+  color: #ce4e4e;
+}
+
+.devicon-codeigniter-plain-wordmark.colored, .devicon-codeigniter-plain.colored {
+  color: #ee4323;
+}
+
+.devicon-coffeescript-original-wordmark.colored, .devicon-coffeescript-original.colored, .devicon-coffeescript-plain-wordmark.colored, .devicon-coffeescript-plain.colored {
+  color: #28334c;
+}
+
+.devicon-cplusplus-line-wordmark.colored, .devicon-cplusplus-line.colored, .devicon-cplusplus-plain-wordmark.colored, .devicon-cplusplus-plain.colored {
+  color: #9c033a;
+}
+
+.devicon-csharp-line-wordmark.colored, .devicon-csharp-line.colored, .devicon-csharp-plain-wordmark.colored, .devicon-csharp-plain.colored {
+  color: #68217a;
+}
+
+.devicon-css3-plain-wordmark.colored, .devicon-css3-plain.colored {
+  color: #3d8fc6;
+}
+
+.devicon-debian-plain-wordmark.colored, .devicon-debian-plain.colored {
+  color: #A80030;
+}
+
+.devicon-django-line-wordmark.colored, .devicon-django-line.colored, .devicon-django-plain-wordmark.colored, .devicon-django-plain.colored {
+  color: #003A2B;
+}
+
+.devicon-docker-plain-wordmark.colored, .devicon-docker-plain.colored {
+  color: #019bc6;
+}
+
+.devicon-doctrine-line-wordmark.colored, .devicon-doctrine-line.colored, .devicon-doctrine-plain-wordmark.colored, .devicon-doctrine-plain.colored {
+  color: #f56d39;
+}
+
+.devicon-dot-net-plain-wordmark.colored, .devicon-dot-net-plain.colored {
+  color: #1384c8;
+}
+
+.devicon-drupal-plain-wordmark.colored, .devicon-drupal-plain.colored {
+  color: #0073BA;
+}
+
+.devicon-erlang-plain-wordmark.colored, .devicon-erlang-plain.colored {
+  color: #a90533;
+}
+
+.devicon-facebook-original.colored, .devicon-facebook-plain.colored {
+  color: #3d5a98;
+}
+
+.devicon-firefox-plain-wordmark.colored, .devicon-firefox-plain.colored {
+  color: #DD732A;
+}
+
+.devicon-foundation-plain-wordmark.colored, .devicon-foundation-plain.colored {
+  color: #008cba;
+}
+
+.devicon-gimp-plain-wordmark.colored, .devicon-gimp-plain.colored {
+  color: #716955;
+}
+
+.devicon-git-plain-wordmark.colored, .devicon-git-plain.colored {
+  color: #f34f29;
+}
+
+.devicon-go-line.colored, .devicon-go-plain.colored {
+  color: #000;
+}
+
+.devicon-google-original-wordmark.colored, .devicon-google-original.colored, .devicon-google-plain-wordmark.colored, .devicon-google-plain.colored {
+  color: #587dbd;
+}
+
+.devicon-grunt-line-wordmark.colored, .devicon-grunt-line.colored, .devicon-grunt-plain-wordmark.colored, .devicon-grunt-plain.colored {
+  color: #fcaa1a;
+}
+
+.devicon-gulp-plain.colored {
+  color: #eb4a4b;
+}
+
+.devicon-heroku-line-wordmark.colored, .devicon-heroku-line.colored, .devicon-heroku-original-wordmark.colored, .devicon-heroku-original.colored, .devicon-heroku-plain-wordmark.colored, .devicon-heroku-plain.colored {
+  color: #6762a6;
+}
+
+.devicon-html5-plain-wordmark.colored, .devicon-html5-plain.colored {
+  color: #e54d26;
+}
+
+.devicon-ie10-original.colored, .devicon-ie10-plain.colored {
+  color: #1EBBEE;
+}
+
+.devicon-illustrator-line.colored, .devicon-illustrator-plain.colored {
+  color: #faa625;
+}
+
+.devicon-inkscape-plain-wordmark.colored, .devicon-inkscape-plain.colored {
+  color: #000;
+}
+
+.devicon-java-plain-wordmark.colored, .devicon-java-plain.colored {
+  color: #EA2D2E;
+}
+
+.devicon-jasmine-plain-wordmark.colored, .devicon-jasmine-plain.colored {
+  color: #8a4182;
+}
+
+.devicon-javascript-plain.colored {
+  color: #f0db4f;
+}
+
+.devicon-jetbrains-line-wordmark.colored, .devicon-jetbrains-line.colored, .devicon-jetbrains-plain-wordmark.colored, .devicon-jetbrains-plain.colored {
+  color: #F68B1F;
+}
+
+.devicon-jquery-plain-wordmark.colored, .devicon-jquery-plain.colored {
+  color: #0769ad;
+}
+
+.devicon-krakenjs-plain-wordmark.colored, .devicon-krakenjs-plain.colored {
+  color: #0081C2;
+}
+
+.devicon-laravel-plain-wordmark.colored, .devicon-laravel-plain.colored {
+  color: #fd4f31;
+}
+
+.devicon-less-plain-wordmark.colored {
+  color: #2a4d80;
+}
+
+.devicon-linux-plain.colored {
+  color: #000;
+}
+
+.devicon-meteor-plain-wordmark.colored, .devicon-meteor-plain.colored {
+  color: #df5052;
+}
+
+.devicon-mocha-plain.colored {
+  color: #8d6748;
+}
+
+.devicon-mongodb-plain-wordmark.colored, .devicon-mongodb-plain.colored {
+  color: #4FAA41;
+}
+
+.devicon-moodle-plain-wordmark.colored, .devicon-moodle-plain.colored {
+  color: #F7931E;
+}
+
+.devicon-mysql-plain-wordmark.colored, .devicon-mysql-plain.colored {
+  color: #00618a;
+}
+
+.devicon-nginx-original-wordmark.colored, .devicon-nginx-original.colored, .devicon-nginx-plain-wordmark.colored, .devicon-nginx-plain.colored {
+  color: #090;
+}
+
+.devicon-nodejs-plain-wordmark.colored, .devicon-nodejs-plain.colored {
+  color: #83CD29;
+}
+
+.devicon-nodewebkit-line-wordmark.colored, .devicon-nodewebkit-line.colored, .devicon-nodewebkit-plain-wordmark.colored, .devicon-nodewebkit-plain.colored {
+  color: #3d3b47;
+}
+
+.devicon-oracle-original.colored, .devicon-oracle-plain-wordmark.colored, .devicon-oracle-plain.colored {
+  color: #EA1B22;
+}
+
+.devicon-photoshop-line.colored, .devicon-photoshop-plain.colored {
+  color: #80b5e2;
+}
+
+.devicon-php-plain.colored {
+  color: #6181b6;
+}
+
+.devicon-postgresql-plain-wordmark.colored, .devicon-postgresql-plain.colored {
+  color: #336791;
+}
+
+.devicon-python-plain-wordmark.colored, .devicon-python-plain.colored {
+  color: #ffd845;
+}
+
+.devicon-rails-plain-wordmark.colored, .devicon-rails-plain.colored {
+  color: #a62c46;
+}
+
+.devicon-ruby-plain-wordmark.colored, .devicon-ruby-plain.colored {
+  color: #d91404;
+}
+
+.devicon-safari-line-wordmark.colored, .devicon-safari-line.colored, .devicon-safari-plain-wordmark.colored, .devicon-safari-plain.colored {
+  color: #1B88CA;
+}
+
+.devicon-react-original-wordmark.colored, .devicon-react-original.colored, .devicon-react-plain-wordmark.colored, .devicon-react-plain.colored {
+  color: #61dafb;
+}
+
+.devicon-redhat-original-wordmark.colored, .devicon-redhat-original.colored, .devicon-redhat-plain-wordmark.colored, .devicon-redhat-plain.colored {
+  color: #e93442;
+}
+
+.devicon-redis-plain-wordmark.colored, .devicon-redis-plain.colored {
+  color: #d82c20;
+}
+
+.devicon-sass-original.colored, .devicon-sass-plain-wordmark.colored, .devicon-sass-plain.colored {
+  color: #c69;
+}
+
+.devicon-sequelize-original-wordmark.colored, .devicon-sequelize-original.colored, .devicon-sequelize-plain-wordmark.colored, .devicon-sequelize-plain.colored {
+  color: #3b4b72;
+}
+
+.devicon-symfony-original-wordmark.colored, .devicon-symfony-original.colored, .devicon-symfony-plain-wordmark.colored, .devicon-symfony-plain.colored {
+  color: #1A171B;
+}
+
+.devicon-travis-plain-wordmark.colored, .devicon-travis-plain.colored {
+  color: #bb2031;
+}
+
+.devicon-trello-plain-wordmark.colored, .devicon-trello-plain.colored {
+  color: #23719f;
+}
+
+.devicon-twitter-original.colored, .devicon-twitter-plain.colored {
+  color: #1da1f2;
+}
+
+.devicon-typescript-original.colored, .devicon-typescript-plain.colored {
+  color: #007acc;
+}
+
+.devicon-ubuntu-plain-wordmark.colored, .devicon-ubuntu-plain.colored {
+  color: #dd4814;
+}
+
+.devicon-vim-plain.colored {
+  color: #179a33;
+}
+
+.devicon-windows8-original-wordmark.colored, .devicon-windows8-original.colored, .devicon-windows8-plain-wordmark.colored, .devicon-windows8-plain.colored {
+  color: #00adef;
+}
+
+.devicon-wordpress-plain-wordmark.colored, .devicon-wordpress-plain.colored {
+  color: #494949;
+}
+
+.devicon-yii-plain-wordmark.colored, .devicon-yii-plain.colored {
+  color: #0073bb;
+}
+
+.devicon-zend-plain-wordmark.colored, .devicon-zend-plain.colored {
+  color: #68b604;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #555;
+  font-family: "Antic Slab", serif;
+  font-weight: 400;
+}
+
+article, aside, figcaption, figure, footer, header, nav, section {
+  display: block;
+}
+
+h1, h2, h3, h4, stong {
+  margin-top: 1em;
+  padding-top: 1em;
+  line-height: 1.25;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+p, figure {
+  margin: 1em 0;
+}
+
+a img {
+  border: none;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+}
+@keyframes pulse {
+  from {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+}
+#particles-js {
+  background: #1a222c;
+  display: flex;
+  vertical-align: bottom;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#particles-js .particles-js-canvas-el {
+  height: 100vh !important;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  z-index: 1;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.header .site-title {
+  font-size: 50px;
+  display: block;
+  line-height: 1;
+  color: #FFF;
+}
+@media only screen and (min-width: 768px) {
+  .header .site-title {
+    margin: 0;
+    font-size: 76px;
+  }
+}
+.header .site-description {
+  font-size: 20px;
+  display: block;
+  line-height: 1;
+  color: #FFF;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .header .site-description {
+    font-size: 34px;
+  }
+}
+
+.header-links {
+  margin: 10px;
+}
+.header-links .link {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .header-links .link {
+    font-size: 20px;
+  }
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-icons a {
+  outline: 0 !important;
+  border: none !important;
+  outline-style: none !important;
+  -moz-outline-style: none !important;
+  padding: none;
+  margin: none;
+}
+.header-icons .icon {
+  text-align: center;
+  color: #FFF;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  transition: all 0.5s;
+}
+.header-icons .icon:hover {
+  color: #1a222c;
+  background: #FFF;
+}
+.header-icons .icon:active {
+  color: #1a222c;
+  background: #FFF;
+}
+@media only screen and (min-width: 768px) {
+  .header-icons .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.down {
+  color: #FFF;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  outline: 0 !important;
+  border: none !important;
+  outline-style: none !important;
+  -moz-outline-style: none !important;
+}
+.down .icon {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  -webkit-animation: pulse 1.3s infinite;
+  animation: pulse 1.3s infinite;
+}
+.down .icon:hover {
+  color: #4B5664;
+}
+.down .icon:active {
+  color: #4B5664;
+}
+
+#about {
+  font-size: 120%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+@media only screen and (min-width: 768px) {
+  #about {
+    width: 80%;
+  }
+}
+#about svg {
+  width: 60px !important;
+  height: auto;
+}
+
+.tech {
+  margin: 10px;
+  flex: 1 1 0;
+}
+.tech h2, .tech h3 {
+  font-weight: 400;
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user p {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .user {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.user-details {
+  text-align: center;
+  margin: 5px auto;
+}
+.user-details h1 {
+  font-weight: 400;
+}
+
+.footer {
+  background: #1a222c;
+  padding: 10px 0;
+  margin-top: 100px;
+  text-align: center;
+  color: #FFF;
+}
+.footer .love {
+  color: red;
+}
+.footer a {
+  text-decoration: none;
+  margin: 0;
+  color: #FFF;
+}
+.footer a:hover {
+  color: #4B5664;
+}
+.footer a:active {
+  color: #4B5664;
+}
+
+/*!  - - - - - - - - - - - -   Customizations   - - - - - - - - - - - - - - - */
+/* ---------------------------------------------- /*
+ *               Theme covers
+/* ---------------------------------------------- */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  position: relative;
+}
+
+.h4 {
+  font-weight: 600;
+}
+
+.copyright {
+  font-family: "Lato", Calibri, Tahoma, Arial, "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.copyright > span.label {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.footer-wrapper {
+  background: #1a1e23;
+  color: #ccc;
+  padding: 16px 0;
+}
+
+.footer-wrapper small {
+  color: #1a1e23;
+}
+
+/* .noty-container { */
+/* font-size: 14px; */
+/* } */
+/* ---------------------------------------------- /*
+ *               About Section
+/* ---------------------------------------------- */
+.short-info h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------- /*
+ *               Resume Section
+/* ---------------------------------------------- */
+/* === Resume Timeline === */
+.timeline-content {
+  padding: 0;
+}
+
+.timeline-content .panel-body p {
+  line-height: 24px;
+}
+
+.timeline-heading h3 {
+  /*font-size: 22px;*/
+  line-height: 26px;
+}
+
+.timeline-heading span {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.timeline-heading span a.h4 {
+  text-decoration: none;
+}
+
+/* ---------------------------------------------- /*
+ *               Skill Section
+/* ---------------------------------------------- */
+.skill-icon {
+  width: 15%;
+}
+
+.skill-title {
+  width: 55%;
+}
+
+.skill-title span,
+.skill-title i {
+  float: left;
+  margin-top: -6px;
+  line-height: 24px;
+}
+
+.skill-title i {
+  margin-right: 4px;
+}
+
+.skill-title span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -4px;
+  text-transform: capitalize;
+}
+
+/* ---------------------------------------------- /*
+ *  progress-bar
+/* ---------------------------------------------- */
+.skill-progress .progress {
+  background-image: none;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: -20px;
+  right: 15px;
+}
+
+.progress-bar.six-sec-ease-in-out {
+  background-image: linear-gradient(to bottom, #3b8269 0, #68c3a3 100%);
+}
+
+.progress .progress-bar.six-sec-ease-in-out {
+  -webkit-transition: width 4s ease-in-out;
+  -moz-transition: width 4s ease-in-out;
+  -o-transition: width 4s ease-in-out;
+  transition: width 4s ease-in-out;
+}
+
+/* ---------------------------------------------- /*
+ *               Chart CSS
+/* ---------------------------------------------- */
+.percent {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.chart-text span {
+  font-size: 18px;
+}
+
+/* ---------------------------------------------- /*
+ *               Cusomizations
+/* ---------------------------------------------- */
+.navbar-brand {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+@media (min-width: 992px) {
+  .grow {
+    transition: all 0.02s ease-in-out;
+  }
+
+  .grow:hover {
+    transform: scale(1.2);
+  }
+}
+ul.list-check li {
+  /* font-family: "Helvetica"; */
+  /* font-weight: 100; */
+}
+
+ul.list-check li i {
+  color: #68c3a3;
+  margin-right: 5px;
+}
+
+.scroll-up a {
+  opacity: 0.6;
+  font-size: 26px;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+#current {
+  color: #f35626;
+}
+
+.hue {
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 10s infinite linear;
+}
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+/*! - - - - - -   Extra small devices (phones, less than 768px)   - - - - - - */
+@media (max-width: 766px) {
+  .intro h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .social-icons ul {
+    margin-left: 0;
+  }
+
+  .social-icons li {
+    /* padding: 0; */
+  }
+
+  .social-icons a i {
+    margin: 0 5px;
+  }
+
+  .mouse-icon {
+    display: none;
+  }
+
+  .navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+    padding: 10px 15px;
+  }
+
+  .navbar-custom .dropdown-menu {
+    margin-left: 20px;
+  }
+
+  /* about me section */
+  .biography {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  ul.list-check li {
+    width: 100%;
+  }
+
+  .download-button .btn {
+    margin-bottom: 20px;
+  }
+
+  /* resume */
+  .resume:before,
+.resume:after {
+    left: 1px;
+  }
+
+  /* skill section */
+  .skill-title h3 {
+    font-size: 12px;
+  }
+
+  /* facts section */
+  .count-wrap i {
+    font-size: 40px;
+  }
+
+  .count-wrap h3 {
+    font-size: 30px;
+    line-height: 16px;
+  }
+
+  .count-wrap p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .count-wrap > div {
+    margin-bottom: 40px;
+  }
+
+  #filter li {
+    margin-bottom: 20px;
+  }
+
+  /* blog section */
+  .blog-post-wrapper {
+    margin-bottom: 40px;
+  }
+
+  /* hire us section */
+  .hire-section h2 {
+    line-height: 40px;
+  }
+
+  /* contact section */
+  .contact-form {
+    margin-bottom: 40px;
+  }
+
+  .contact-section div > i {
+    float: none;
+    margin-right: 0;
+  }
+
+  .center-xs {
+    text-align: center;
+  }
+
+  .contact-section address,
+.contact-section .contact-number {
+    font-size: 12px;
+  }
+
+  /* service */
+  .service-wrap > div {
+    margin-bottom: 100px;
+  }
+
+  .service-wrap > div:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  /* HOME TWO */
+  #homeTwo:before {
+    width: 100%;
+  }
+
+  .personal-info {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .personal-info h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .personal-info .intro-sub {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .personal-info p {
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .personal-info .my-signature {
+    display: none;
+  }
+
+  .personal-info .download-button a {
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-right: 0;
+  }
+
+  /* .timeline-heading */
+  .timeline-heading h3.panel-title {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .timeline-heading span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+
+  .timeline-heading span a.h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .timeline > li .posted-date .month {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .thumbnail {
+    margin-bottom: 5px;
+  }
+}
+/* Landscape Mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .intro h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .social-icons ul {
+    margin-left: -5px;
+  }
+
+  .social-icons li {
+    padding: 0 5px;
+  }
+
+  .social-icons a i {
+    margin: 0 7px;
+  }
+
+  .mouse-icon {
+    display: none;
+  }
+
+  .navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+    padding: 10px 15px;
+  }
+
+  .navbar-custom .dropdown-menu {
+    margin-left: 20px;
+  }
+
+  /* about me section */
+  .biography {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  ul.list-check li {
+    /* width: 50%; */
+    width: 100%;
+  }
+
+  /* resume */
+  .resume:before,
+.resume:after {
+    left: 1px;
+  }
+
+  /* skill section */
+  .skill-title h3 {
+    font-size: 12px;
+  }
+
+  /* facts section */
+  .count-wrap i {
+    font-size: 64px;
+  }
+
+  .count-wrap h3 {
+    font-size: 50px;
+    line-height: 28px;
+  }
+
+  .count-wrap p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .count-wrap > div {
+    margin-bottom: 40px;
+  }
+
+  /* blog section */
+  .blog-post-wrapper {
+    margin-bottom: 40px;
+  }
+
+  /* hire us section */
+  .hire-section h2 {
+    line-height: 40px;
+  }
+
+  /* contact section */
+  .contact-form {
+    margin-bottom: 40px;
+  }
+
+  .contact-section .map-icon,
+.contact-section .mobile-icon {
+    float: none;
+  }
+
+  .center-xs {
+    text-align: center;
+  }
+
+  /* service */
+  .service-wrap > div {
+    margin-bottom: 100px;
+  }
+
+  .service-wrap > div:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  /* HOME TWO */
+  #homeTwo:before {
+    width: 100%;
+  }
+
+  .personal-info {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .personal-info h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .personal-info .intro-sub {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .personal-info p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .personal-info .my-signature {
+    margin-bottom: 45px;
+    display: block;
+  }
+
+  .personal-info .download-button a {
+    padding: 14px 20px;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-custom .navbar-brand {
+    padding: 10px 15px;
+  }
+
+  .navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  /* about me section */
+  .biography {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  /* resume */
+  .resume:before,
+.resume:after {
+    left: 0px;
+  }
+
+  /* skill section */
+  .skill-title h3 {
+    font-size: 14px;
+  }
+
+  /* blog section */
+  .blog-post-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .entry-meta ul li {
+    padding: 0 5px;
+  }
+
+  /* contact section */
+  .contact-form {
+    margin-bottom: 40px;
+  }
+
+  .contact-section .map-icon,
+.contact-section .mobile-icon {
+    float: left;
+  }
+
+  .center-xs {
+    text-align: left;
+  }
+
+  .portfolio-item {
+    min-height: 162px;
+  }
+
+  /* service */
+  .service-wrap > div {
+    margin-bottom: 100px;
+  }
+
+  .service-wrap > div:nth-child(3),
+.service-wrap > div:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  /* HOME TWO */
+  #homeTwo:before {
+    width: 100%;
+  }
+
+  .personal-info {
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-item {
+    min-height: 150px;
+  }
+
+  .download-button a {
+    margin-right: 10px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* Large devices (large desktops, 1280px and up) */
+/* Extra Large devices (large desktops, 1600px and up) */
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .personal-info {
+    padding-right: 180px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
