@@ -1,12 +1,20 @@
-section #jobs {
+main-timeline {
   font-family: tahoma;
   padding: 40px 0;
+}
+
+main-timeline, ::after, ::before {
+    box-sizing: border-box;
 }
 .main-timeline {
   font-family: tahoma;
   padding: 20px 0;
   position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
+
 
 .main-timeline::before,
 .main-timeline::after {

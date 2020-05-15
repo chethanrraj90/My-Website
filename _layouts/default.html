@@ -4,13 +4,14 @@
   {% include head.html %}
   <body>
       {% include header.html %}
+          {% include jobs.html %}
       <section id="about">
         {% include about.html %}
       </section>
       <section id="timelineEducation">
       <!--{% include education.html %}-->
     </section>
-    {% include jobs.html %}
+
         {{ content }}
       {% include footer.html %}
   </body>
