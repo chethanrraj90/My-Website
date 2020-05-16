@@ -8,3 +8,143 @@ wow = new WOW(
       }
     );
     wow.init();
+
+    jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+//INICIAMOS EL PROGRESS
+jQuery('.Count').each(function () {
+  var $this = $(this);
+  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    duration: 6000,
+    easing: 'swing',
+    step: function () {
+      $this.text(Math.ceil(this.Counter));
+    }
+  });
+});
+//INICIAMOS EL fluid
+
+var fm1 = new FluidMeter();
+fm1.init({
+  targetContainer: document.getElementById("fluid-meter-1"),
+  fillPercentage: 75,
+  options: {
+    fontSize: "25px",
+    fontFamily: "Oxygen",
+    drawPercentageSign: true,
+    drawBubbles: true,
+    size: 150,
+    borderWidth: 4,
+    backgroundColor: "#323842",
+    foregroundColor: "#232e3c",
+    foregroundFluidLayer: {
+      fillStyle: "#55DD10",
+      angularSpeed: 90,
+      maxAmplitude: 11,
+      frequency: 25,
+      horizontalSpeed: -200
+    },
+    backgroundFluidLayer: {
+      fillStyle: "#CDDD10",
+      angularSpeed: 100,
+      maxAmplitude: 13,
+      frequency: 23,
+      horizontalSpeed: 230
+    }
+  }
+});
+
+var fm2 = new FluidMeter();
+fm2.init({
+  targetContainer: document.getElementById("fluid-meter-2"),
+  fillPercentage: 80,
+  options: {
+    fontSize: "25px",
+    fontFamily: "Oxygen",
+    drawPercentageSign: true,
+    drawBubbles: true,
+    size: 150,
+    borderWidth: 4,
+    backgroundColor: "#323842",
+    foregroundColor: "#232e3c",
+    foregroundFluidLayer: {
+      fillStyle: "#55DD10",
+      angularSpeed: 90,
+      maxAmplitude: 11,
+      frequency: 25,
+      horizontalSpeed: -200
+    },
+    backgroundFluidLayer: {
+      fillStyle: "#CDDD10",
+      angularSpeed: 100,
+      maxAmplitude: 13,
+      frequency: 23,
+      horizontalSpeed: 230
+    }
+  }
+});
+
+var fm3 = new FluidMeter();
+fm3.init({
+  targetContainer: document.getElementById("fluid-meter-3"),
+  fillPercentage: 80,
+  options: {
+    fontSize: "25px",
+    fontFamily: "Oxygen",
+    drawPercentageSign: true,
+    drawBubbles: true,
+    size: 150,
+    borderWidth: 4,
+    backgroundColor: "#323842",
+    foregroundColor: "#232e3c",
+    foregroundFluidLayer: {
+      fillStyle: "#55DD10",
+      angularSpeed: 90,
+      maxAmplitude: 11,
+      frequency: 25,
+      horizontalSpeed: -200
+    },
+    backgroundFluidLayer: {
+      fillStyle: "#CDDD10",
+      angularSpeed: 100,
+      maxAmplitude: 13,
+      frequency: 23,
+      horizontalSpeed: 230
+    }
+  }
+});
+
+var fm4 = new FluidMeter();
+fm4.init({
+  targetContainer: document.getElementById("fluid-meter-4"),
+  fillPercentage: 65,
+  options: {
+    fontSize: "25px",
+    fontFamily: "Oxygen",
+    drawPercentageSign: true,
+    drawBubbles: true,
+    size: 150,
+    borderWidth: 4,
+    backgroundColor: "#323842",
+    foregroundColor: "#232e3c",
+    foregroundFluidLayer: {
+      fillStyle: "#55DD10",
+      angularSpeed: 90,
+      maxAmplitude: 11,
+      frequency: 25,
+      horizontalSpeed: -200
+    },
+    backgroundFluidLayer: {
+      fillStyle: "#CDDD10",
+      angularSpeed: 100,
+      maxAmplitude: 13,
+      frequency: 23,
+      horizontalSpeed: 230
+    }
+  }
+});

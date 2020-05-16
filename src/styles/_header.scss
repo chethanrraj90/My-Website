@@ -76,11 +76,11 @@
   .iconHeader {
     text-align: center;
     color: #FFF;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     font-size: 20px;
-    padding: 10px;
-    margin: 5px;
+
+    margin: 9px;
     border-radius: 50%;
     border: 2px solid #FFF;
     transition: all .5s;
@@ -93,11 +93,16 @@
       background: #FFF;
     }
     @media only screen and (min-width:$cut) {
-      width: 30px;
-      height: 30px;
-      font-size: 30px;
-      line-height: 30px;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 35px;
     }
+    @media (min-width:$mobilemin) and (max-width:$mobilemax){
+
+    padding: 10px;
+
+  }
   }
 }
 
