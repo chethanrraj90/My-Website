@@ -19,8 +19,3 @@ In order to compile the assets and run `Jekyll` locally you need to follow those
 - Spread the word
 - Reach out to me directly at <andrevill1994@gmail.com> if you have questions
 
-# Donate
-
-`btc: 36V7HqqENSKn6iFCBuE4iCdtB29uGoCKzN`
-
-`eth: 0xB419E3E9fa2233383E0877d442e55C34B9C944dD`
