@@ -31,8 +31,8 @@ jQuery('.Count').each(function () {
 
 var fm1 = new FluidMeter();
 fm1.init({
-  targetContainer: document.getElementById("fluid-meter-1"),
-  fillPercentage: 75,
+  targetContainer: document.getElementById("fluid-meter-creativity"),
+  fillPercentage: 80,
   options: {
     fontSize: "25px",
     fontFamily: "Oxygen",
@@ -61,8 +61,8 @@ fm1.init({
 
 var fm2 = new FluidMeter();
 fm2.init({
-  targetContainer: document.getElementById("fluid-meter-2"),
-  fillPercentage: 80,
+  targetContainer: document.getElementById("fluid-meter-responsability"),
+  fillPercentage: 90,
   options: {
     fontSize: "25px",
     fontFamily: "Oxygen",
@@ -122,7 +122,7 @@ fm3.init({
 var fm4 = new FluidMeter();
 fm4.init({
   targetContainer: document.getElementById("fluid-meter-4"),
-  fillPercentage: 65,
+  fillPercentage: 75,
   options: {
     fontSize: "25px",
     fontFamily: "Oxygen",
@@ -147,4 +147,19 @@ fm4.init({
       horizontalSpeed: 230
     }
   }
+});
+
+var btn = $('#buttonTop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });

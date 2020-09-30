@@ -3300,7 +3300,7 @@ body {
   padding: 0;
   font-size: 100%;
   line-height: 1.5;
-  color: #1a222c;
+  color: #e5eaf0;
   background: #1a222c;
   font-family: 'Antic Slab', serif;
   font-weight: 400; }
@@ -3312,7 +3312,7 @@ h1, h2, h3, h4, stong {
   margin-top: 1em;
   padding-top: 1em;
   line-height: 1.25;
-  color: #333; }
+  color: rgb(241, 241, 241); }
 
 h1 {
   font-size: 2.5rem; }
@@ -3883,4 +3883,39 @@ main-timeline, ::after, ::before {
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4); }
 
-/*# sourceMappingURL=main.css.map */
+  #buttonTop {
+    display: inline-block;
+    background-color: #2f3535;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #buttonTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #buttonTop:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #buttonTop:active {
+    background-color: #555;
+  }
+  #buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+  }
