@@ -1,16 +1,16 @@
 # Site settings
-title: André Villamil
+title: Chethan R
 description: CV Resume
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: André Villamil
-user_description: I’m a full –stack software developer that are always on search of new challenges. You know, no task is too scary nor too difficult. I like researching on new technologies and practices when I am in front of my computer. KISS (Keep It Simple, S****!)
-user_title: Software Developer
-email: andrevill1994o@gmail.com
+username: Chethan R
+user_description: Resume.
+user_title: A  student at DSU.
+email: chethanrraj90@gmail.com
 # twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
+# github_username:  chethanrraj90
 # gplus_username:  lorem_ipsum
 
 # Google-analytics
